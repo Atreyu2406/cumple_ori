@@ -65,12 +65,12 @@
         }
 
         #imageCarouselInner {
-            height: 400px; /* Aumenta la altura del carrusel */
+            height: auto; /* Cambio la altura para que se ajuste automáticamente al tamaño de las imágenes */
         }
 
         .carousel-item img {
-            max-height: 100%; /* Ajusta el tamaño máximo de las imágenes del carrusel */
-            margin: 0 auto;
+            max-width: 100%; /* Ajusto el tamaño máximo de las imágenes */
+            height: auto; /* Ajusto la altura automáticamente */
         }
 
         footer {
@@ -88,9 +88,6 @@
         @media (max-width: 768px) {
             .pawPatrolImage {
                 max-width: 50%;
-            }
-            #imageCarouselInner {
-                height: 300px; /* Ajusta la altura del carrusel en dispositivos móviles */
             }
         }
     </style>
@@ -169,5 +166,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-

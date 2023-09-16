@@ -61,7 +61,7 @@
         #imageCarousel {
             margin: 0 auto;
             margin-top: 50px;
-            margin-bottom: 300px;
+            margin-bottom: 20px; /* Reducido el espacio inferior en dispositivos móviles */
         }
 
         #imageCarouselInner {
@@ -79,6 +79,17 @@
             background-color: white;
             padding: 20px;
         }
+
+        /* Media Query para dispositivos móviles */
+        @media (max-width: 768px) {
+            .pawPatrolImage {
+                max-width: 50%; /* Ajusta el tamaño de la imagen */
+            }
+            #imageCarousel {
+                margin-top: 20px; /* Reducido el espacio superior en dispositivos móviles */
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -95,11 +106,11 @@
     <a href="https://wa.me/05491165643882/?text=Hola%20Benja,%20confirmo%20mi%20asistencia!" target="_blank" id="confirmaAsistencia">Confirmar Asistencia</a>
 
     <div id="infoCumpleanera">
-        <h2>Sobre mí...</h2>
+        <h2 class="mb-3">Sobre mí...</h2>
         <p>Color: ROSA</p>
         <p>Hobbie: DIBUJAR</p>
         <p>Juguete: PELUCHE SKY</p>
-        <p>Comida: FIDEOS SIN SALSA</p>
+        <p>Comida: SALCHICHA</p>
         <p>Deporte: FÚTBOL</p>
         <p>Película: PAW PATROL MOVIE</p>
         <p>Canción: NO SE HABLA DE BRUNO</p>
@@ -119,30 +130,6 @@
                         </div>
                         <div class="carousel-item">
                             <img src="./src/img/cumple_ori2.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./src/img/cumple_ori3.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./src/img/cumple_ori4.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./src/img/cumple_ori5.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./src/img/cumple_ori6.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./src/img/cumple_ori7.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./src/img/cumple_ori8.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./src/img/cumple_ori9.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./src/img/cumple_ori10.jpg" alt="Foto 2" class="d-block w-50 mx-auto">
                         </div>
                         <!-- Agrega más imágenes aquí -->
                     </div>
@@ -179,3 +166,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
